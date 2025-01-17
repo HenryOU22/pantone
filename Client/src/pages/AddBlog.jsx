@@ -34,7 +34,7 @@ const AddBlog = () => {
             setLoading(true);
             setError(null);
 
-            const response = await axios.post("http://localhost:4321/api/v1/blogs", formData)
+            const response = await axios.post("https://pantone.onrender.com/api/v1/blogs", formData)
 
             if (response.status === 201){
                 toast.success("Blog added successfully 😀👍")

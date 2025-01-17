@@ -7,7 +7,7 @@ import { FaPen } from "react-icons/fa";
 
 const Blogs = () => {
 
-    const blog = useFetch('http://localhost:4321/api/v1/blogs')
+    const blog = useFetch('https://pantone.onrender.com/api/v1/blogs')
 
     console.log(blog);
 

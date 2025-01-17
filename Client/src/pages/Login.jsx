@@ -22,7 +22,7 @@ const Login = () => {
         e.preventDefault();
         try {
             setLoading(true);
-            const response = await axios.post("http://localhost:4321/api/v1/auth/login", {email, password});
+            const response = await axios.post("https://pantone.onrender.com/api/v1/auth/login", {email, password});
             if (response.status === 200) {
                 localStorage.setItem("pantone", JSON.stringify(response.data));
                 dispatch({type: "LOGIN", payload: response.data})

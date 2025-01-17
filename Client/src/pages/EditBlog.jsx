@@ -26,7 +26,7 @@ const EditBlog = () => {
     const fetchBlog = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4321/api/v1/blogs/${_id}`,
+          `https://pantone.onrender.com/api/v1/blogs/${_id}`,
           {
             headers: {
               Authorization: `Bearer ${user.token}`,
@@ -55,7 +55,7 @@ const EditBlog = () => {
       setError(null);
 
       const response = await axios.patch(
-        `http://localhost:4321/api/v1/blogs/${_id}`,
+        `https://pantone.onrender.com/api/v1/blogs/${_id}`,
         formData,
         {
           headers: {
