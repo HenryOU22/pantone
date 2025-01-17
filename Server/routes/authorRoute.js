@@ -15,4 +15,4 @@ AuthRouter.get('/profile', authenticate, getProfile);
 
 
 
-export default AuthRouter;
+export default AuthRouter; 
